@@ -22,7 +22,8 @@ def max_of_array(array):
             if array[i] < min:
                 min = array[i]
                 min_index = i
-    array[max_index], array[min_index] = 0, 0
+    array[max_index], array[min_index] = 0, 0 # знаю, что менять исходны массив не очень хорая практика, для решения
+    # можно просто исходный массив скопировать и работать с полученным
     print(min, max)
     return [min, max]
 
